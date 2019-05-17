@@ -1,16 +1,14 @@
 package cc.mrbird.system.domain;
 
+import cc.mrbird.common.annotation.ExportConfig;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Transient;
-
-import cc.mrbird.common.annotation.ExportConfig;
-
+/**
+ * 日志信息
+ */
 @Table(name = "t_log")
 public class SysLog implements Serializable {
 

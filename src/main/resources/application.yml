@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
   tomcat:
     uri-encoding: utf-8
 spring:
@@ -10,7 +10,7 @@ spring:
       driverClassName: com.mysql.jdbc.Driver
       url: jdbc:mysql://127.0.0.1:3306/mrbird?useUnicode=true&characterEncoding=utf8
       username: root
-      password: root
+      password: 199368
       # 连接池配置
       initial-size: 5
       min-idle: 5
@@ -70,7 +70,7 @@ spring:
     # Redis服务器连接端口
     port: 6379
     # Redis 密码
-    password:
+    password: 199368
     jedis:
       pool:
         # 连接池中的最小空闲连接
@@ -144,13 +144,13 @@ pagehelper:
   params: count=countSql
 
 # febs 配置
-febs:
-  # 是否在控制台打印 sql语句
-  showsql: true
-  # 时间类型参数在前端页面的展示格式，默认格式为 yyyy-MM-dd HH:mm:ss
-  timeFormat: yyyy-MM-dd HH:mm:ss
-  # 是否开启 AOP 日志，默认开启
-  openAopLog: true
+    febs:
+      # 是否在控制台打印 sql语句
+      showsql: true
+      # 时间类型参数在前端页面的展示格式，默认格式为 yyyy-MM-dd HH:mm:ss
+      timeFormat: yyyy-MM-dd HH:mm:ss
+      # 是否开启 AOP 日志，默认开启
+      openAopLog: true
   shiro:
     # shiro redis缓存时长，默认1800秒
     expireIn: 1800

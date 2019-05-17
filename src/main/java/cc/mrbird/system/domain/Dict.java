@@ -1,15 +1,17 @@
 package cc.mrbird.system.domain;
 
-import java.io.Serializable;
+import cc.mrbird.common.annotation.ExportConfig;
+import com.google.common.base.MoreObjects;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
-import cc.mrbird.common.annotation.ExportConfig;
-import com.google.common.base.MoreObjects;
-
+/**
+ * 字典信息
+ */
 @Table(name = "t_dict")
 public class Dict implements Serializable{
 

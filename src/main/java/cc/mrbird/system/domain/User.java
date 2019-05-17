@@ -1,16 +1,14 @@
 package cc.mrbird.system.domain;
 
+import cc.mrbird.common.annotation.ExportConfig;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Transient;
-
-import cc.mrbird.common.annotation.ExportConfig;
-
+/**
+ * 用户信息
+ */
 @Table(name = "t_user")
 public class User implements Serializable {
 
@@ -21,9 +19,13 @@ public class User implements Serializable {
 	public static final String STATUS_VALID = "1";
 
 	public static final String STATUS_LOCK = "0";
-
+	/**
+	 * 主题颜色
+	 */
 	public static final String DEFAULT_THEME = "green";
-
+	/**
+	 * 头像
+	 */
 	public static final String DEFAULT_AVATAR = "default.jpg";
 
 	/**

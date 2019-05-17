@@ -1,15 +1,17 @@
 package cc.mrbird.system.domain;
 
-import java.io.Serializable;
-import java.util.Date;
+import cc.mrbird.common.annotation.ExportConfig;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
+import java.util.Date;
 
-import cc.mrbird.common.annotation.ExportConfig;
-
+/**
+ * 菜单信息
+ */
 @Table(name = "t_menu")
 public class Menu implements Serializable {
 
